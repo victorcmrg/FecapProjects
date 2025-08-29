@@ -86,8 +86,7 @@ section::after {
 
 /* animação de fade in/out em 10s para asteriscos */
 @keyframes fadeInOut {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  90% { opacity: 1; }
-  100% { opacity: 0; }
+  0% { opacity: 0; transform: rotate(0deg); }
+  50% { opacity: 0.5; transform: rotate(45deg); }
+  100% { opacity: 0; transform: rotate(90deg); }
 }
