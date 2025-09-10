@@ -67,3 +67,15 @@ function loopAsteriscos(container) {
 document.querySelectorAll(".quadrado, section").forEach(el => {
   loopAsteriscos(el);
 });
+
+
+
+//Codigo para tela de loading
+window.addEventListener('load', () => {
+  const loadingScreen = document.getElementById('loading-screen');
+  loadingScreen.style.opacity = '0'; 
+  setTimeout(() => {
+    loadingScreen.remove(); 
+  }, 500); 
+});
+
